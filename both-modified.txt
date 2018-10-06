@@ -1,0 +1,8 @@
+if [- z $"(git diff --"say-hi.txt"-status)" ]; then
+ echo "ok"
+elif [ - z $"(git diff --"output.txt"-status)" ]; then
+ echo "ok"
+ else
+ echo "error"
+ fi
+
